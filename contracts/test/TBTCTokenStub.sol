@@ -3,9 +3,9 @@ pragma solidity ^0.5.10;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol";
 
-contract TBTCToken is ERC20Detailed, ERC20 {
+contract TBTCTokenStub is ERC20Detailed, ERC20 {
  
-    constructor(address _VendingMachine)
+    constructor()
         ERC20Detailed("Trustless bitcoin", "TBTC", 18)
     public {
         // solium-disable-previous-line no-empty-blocks

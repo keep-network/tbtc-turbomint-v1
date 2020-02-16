@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721Metadata.sol";
 
 contract FeeRebateTokenStub is ERC721Metadata {
 
-    constructor(address _depositFactory) 
+    constructor() 
         ERC721Metadata("Fee Rebate Token", "FRT") 
     public {
         // solium-disable-previous-line no-empty-blocks

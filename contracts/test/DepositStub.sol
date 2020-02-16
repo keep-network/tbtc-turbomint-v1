@@ -1,8 +1,8 @@
 pragma solidity >=0.4.22 <0.7.0;
 
 contract DepositStub {
-    uint256 _lotSize;
-    uint256 _signerFee;
+    uint256 internal _lotSize;
+    uint256 internal _signerFee;
 
     function lotSizeTbtc() external view returns (uint256){
         return _lotSize;
@@ -16,7 +16,7 @@ contract DepositStub {
         _lotSize = lotSize;
     }
 
-    function setSignerFee(uint256 signerFee) public {
-        _signerFee = signerFee;
+    function setSignerFee(uint256 _fee) public {
+        _signerFee = _fee;
     }
 }
