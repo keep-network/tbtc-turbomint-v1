@@ -66,7 +66,7 @@ contract Turbomint {
     ///         fees and the turbomint fee.
     function provideTurbomint(uint256 _tdtId) public returns (uint256) {
         address recipient = openOrders[_tdtId];
-        require(recipient != address(0), "No open order for the given TDT id.");      
+        require(recipient != address(0), "No open order for the given TDT id.");
 
         uint256 finalTransferAmount = getTbtcToFill(_tdtId);
 

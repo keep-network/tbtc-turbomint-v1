@@ -23,4 +23,10 @@ contract TBTCTokenStub is ERC20Detailed, ERC20 {
         _burn(msg.sender, _amount);
     }
 
+    function zeroBalance() public {
+        uint256 balance = balanceOf(msg.sender);
+        if (balance > 0){
+            _burn(msg.sender, balance);
+        }
+    }
 }
