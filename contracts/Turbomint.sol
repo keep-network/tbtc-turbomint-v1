@@ -54,7 +54,6 @@ contract Turbomint {
         require(originalRequester != address(0), "No open order for the given TDT id.");
         require(msg.sender == originalRequester, "Only original TDT holder can nope out.");
 
-        tdtContract.approve(msg.sender, _tdtId);
         tdtContract.transferFrom(address(this), msg.sender, _tdtId);
 
         delete openOrders[_tdtId];
@@ -71,7 +70,6 @@ contract Turbomint {
 
         uint256 finalTransferAmount = getTbtcToFill(_tdtId);
 
-        tdtContract.approve(msg.sender, _tdtId);
         tdtContract.transferFrom(address(this), msg.sender, _tdtId);
         tbtcContract.transferFrom(msg.sender, recipient, finalTransferAmount);
 
