@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npx mocha --exit --recursive test",
-    "refresh": "truffle compile && npm run test"
+    "test": "truffle compile && npx mocha --exit --recursive test",
+    "justtest": "npx mocha --exit --recursive test"
   },
   "author": "",
   "license": "ISC",
