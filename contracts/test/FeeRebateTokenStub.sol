@@ -2,11 +2,10 @@ pragma solidity ^0.5.10;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721Metadata.sol";
 
-
 contract FeeRebateTokenStub is ERC721Metadata {
 
-    constructor() 
-        ERC721Metadata("Fee Rebate Token", "FRT") 
+    constructor()
+        ERC721Metadata("Fee Rebate Token", "FRT")
     public {
         // solium-disable-previous-line no-empty-blocks
     }
